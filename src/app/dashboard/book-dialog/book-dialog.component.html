@@ -1,0 +1,52 @@
+<div class="book-dialog">
+  <mat-dialog-content>
+    <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="center center">
+      <div fxFlex="50">
+        <img
+          class="mat-elevation-z5"
+          height="90%"
+          width="90%"
+          src="{{ book.imageUrl }}"
+        />
+      </div>
+      <div fxFlex="50" fxLayout="column">
+        <h1>
+          <b>{{ book.title }}</b>
+        </h1>
+        <p class="authors">
+          <ng-container *ngIf="book.authors">
+            <div *ngFor="let author of book.authors">{{ author }};</div>
+          </ng-container>
+        </p>
+        <div fxLayout="row" fxLayoutAlign="start end">
+          <div fxLayout="column">
+            <p><b>INFORMAÇÕES</b></p>
+            <p><b>Páginas</b></p>
+            <p><b>Editora</b></p>
+            <p><b>Publicação</b></p>
+            <p><b>Idioma</b></p>
+            <p><b>Título Original</b></p>
+            <p><b>ISBN-10</b></p>
+            <p><b>ISBN-13</b></p>
+          </div>
+          <span class="example-spacer"></span>
+          <div fxLayout="column" fxLayoutAlign="start end">
+            <p></p>
+            <p class="bookinfo">{{ book.pageCount }} páginas</p>
+            <p class="bookinfo">{{ book.publisher }}</p>
+            <p class="bookinfo">{{ book.published }}</p>
+            <p class="bookinfo">{{ book.language }}</p>
+            <p class="bookinfo">{{ book.title }}</p>
+            <p class="bookinfo">{{ book.isbn10 }}</p>
+            <p class="bookinfo">{{ book.isbn13 }}</p>
+          </div>
+        </div>
+        <h3><b>RESENHA DA EDITORA</b></h3>
+        <p class="bookinfo">
+          <mat-icon [inline]="true" class="quote-icon">format_quote</mat-icon
+          >{{ book.description }}
+        </p>
+      </div>
+    </div>
+  </mat-dialog-content>
+</div>

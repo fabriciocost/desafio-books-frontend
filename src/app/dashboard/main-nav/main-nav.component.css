@@ -1,0 +1,44 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+.toolbar {
+  min-height: 12vh;
+  background-color: transparent;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 100;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.title-header {
+  margin-left: 8vw;
+}
+
+.background {
+  background-image: url("src/assets/books_background_1.svg"),
+    url("src/assets/books_background_2.svg");
+  background-blend-mode: darken;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .background {
+    background-image: url("src/assets/books_background_1.svg"),
+      url("src/assets/books_background_2.svg");
+    background-blend-mode: darken;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+    /* background-color: #E5E5E5; */
+  }
+}

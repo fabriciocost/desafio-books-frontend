@@ -1,0 +1,47 @@
+<div class="login-background">
+  <div
+    class="form-component"
+    fxFlex="40"
+    fxFlex.sm="100"
+    fxFlex.xs="100"
+    fxLayout="column"
+    fxLayoutAlign="center stretch"
+  >
+    <div
+      class="title"
+      fxLayout="row"
+      fxLayoutGap="10px"
+      fxLayoutAlign="start end"
+    >
+      <div>
+        <img src="../../../assets/images/white_logo.svg" />
+      </div>
+      <p class="title">Books</p>
+    </div>
+    <form
+      class="login-form"
+      [formGroup]="loginForm"
+      (ngSubmit)="onSubmit(loginForm.value)"
+    >
+      <div fxLayout="column" fxLayoutAlign="space-around stretch">
+        <mat-form-field>
+          <mat-label>E-mail</mat-label>
+          <input matInput formControlName="email" id="email" />
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Senha</mat-label>
+          <input
+            matInput
+            [type]="hide ? 'password' : 'text'"
+            formControlName="password"
+            id="password"
+          />
+        </mat-form-field>
+      </div>
+      <div fxLayout="column" fxLayoutAlign="end end">
+        <button mat-raised-button class="login-button">Entrar</button>
+      </div>
+    </form>
+  </div>
+</div>

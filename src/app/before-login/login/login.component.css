@@ -1,0 +1,26 @@
+.login-background {
+  background-image: url("src/assets/login_background_image.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.form-component {
+  padding: 50px;
+  width: 100%;
+}
+
+.title {
+  margin: 10px;
+  font-size: 35px;
+  font-family: Heebo;
+  font-weight: 100;
+  color: white;
+}
+
+.login-button {
+  max-width: 100px;
+  min-width: 50px;
+}

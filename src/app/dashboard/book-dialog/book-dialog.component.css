@@ -1,0 +1,27 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.book-dialog {
+  width: 769px;
+  height: auto;
+}
+
+.authors {
+  color: #ab2680;
+}
+
+.quote-icon {
+  font-size: 36px;
+}
+
+.bookinfo {
+  color: #999999;
+}
+
+@media only screen and (max-width: 768px) {
+  .book-dialog {
+    width: auto;
+    height: auto;
+  }
+}

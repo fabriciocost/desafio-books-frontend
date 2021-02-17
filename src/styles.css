@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: "Heebo", "Helvetica Neue", sans-serif;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: transparentsss !important;
+  background-color: rgba(0, 0, 0, 0.32);
+  border-radius: 4px;
+}
+
+.mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+  color: white !important;
+}
+
+.mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid
+  .mat-form-field-outline-thick {
+  color: white !important;
+  opacity: 0.8 !important;
+}
+
+.mat-input-element {
+  caret-color: white !important;
+}
+
+.mat-form-field-invalid .mat-input-element,
+.mat-warn .mat-input-element {
+  caret-color: white !important;
+}
+
+.mat-form-field-label {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.mat-form-field.mat-focused .mat-form-field-label {
+  color: white !important;
+}
+
+.mat-form-field.mat-form-field-invalid .mat-form-field-label {
+  color: white !important;
+}
+
+.mat-raised-button {
+  font-weight: 300;
+}
